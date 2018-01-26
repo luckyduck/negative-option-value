@@ -2,4 +2,8 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Magento\Catalog\Model\Product\Option\Validator\DefaultValidator"
                 type="Luckyduck\NegativeOptionValue\Model\Product\Option\Validator\DefaultValidator" />
+
+    <preference for="Magento\Catalog\Ui\DataProvider\Product\Form\Modifier\CustomOptions"
+                type="Luckyduck\NegativeOptionValue\Ui\DataProvider\Product\Form\Modifier\CustomOptions" />
+
 </config>
