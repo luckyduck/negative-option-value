@@ -7,9 +7,8 @@ use Magento\Catalog\Model\Product\Option;
 
 class DefaultValidator extends OptionValidator
 {
-    protected function validateOptionValue(Option $option)
+    protected function isNegative($value)
     {
-        // allow negative values
-        return $this->isInRange($option->getPriceType(), $this->priceTypes);
+        return false;
     }
 }
